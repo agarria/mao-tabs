@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="tabs.css">
 </head>
 <body>
+	<!--
     <div class="preloader">
         <span class="logo-preloader">
             <span class="circle">
@@ -18,6 +19,7 @@
             </span>
         </span>
     </div>
+	-->
 	<sidenav>
 		<div class="menu-logo">
 			<img src="mao-side-wht.png">
@@ -97,26 +99,136 @@
 	</sidenav>
 	<main>
 		<div class="main-content">
-			<div class="tab-section tab-1">
+			<div class="tab-section">
 				<div class="tab-head">
 					<span class="tab-head-name">Campaing Controls</span>
 					<span class="tab-head-name">Campaing Ad Copy</span>
 					<span class="tab-head-name tab-head-name-active">Consumer Constraints</span>
 					<span class="tab-head-name">Geo Constraints</span>
 				</div>
-				<div class="tab-action">
-					<div id="tab_side" class="tab-side">
-						<div class="tab-fix">
-							<span class="side-inner-name">
-								Accidents
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name">
+				<div id="tab_action" class="tab-action">
+					<div class="tab-action-menu">
+						<span id="menu_item_1" class="tab-action-menu-item">
+							Accidents
+							<div class="inner-action">
+								<span class="inner-count">2</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span id="menu_item_2" class="tab-action-menu-item">
+							Code
+							<div class="inner-action">
+								<span class="inner-count">6</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span id="menu_item_3" class="tab-action-menu-item">
+							Current
+							<div class="inner-action">
+								<span class="inner-count">4</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Business
+							<div class="inner-action">
+								<span class="inner-count">0</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Communication
+							<div class="inner-action">
+								<span class="inner-count">0</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Services
+							<div class="inner-action">
+								<span class="inner-count">0</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Current
+							<div class="inner-action">
+								<span class="inner-count">1</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Drivers
+							<div class="inner-action">
+								<span class="inner-count">20</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Device Type
+							<div class="inner-action">
+								<span class="inner-count">0</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Accidents
+							<div class="inner-action">
+								<span class="inner-count">0</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Business
+							<div class="inner-action">
+								<span class="inner-count">7</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Credit Score
+							<div class="inner-action">
+								<span class="inner-count">3</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+						<span class="tab-action-menu-item">
+							Current
+							<div class="inner-action">
+								<span class="inner-count">2</span>
+								<span class="inner-arrow">
+									<ion-icon name="chevron-forward-outline"></ion-icon>
+								</span>
+							</div>
+						</span>
+					</div>
+					<div class="tab-action-submenu">
+						<div id="submenu_content_1" class="submenu-content">
+							<span id="menu_subitem_1" class="tab-action-menu-item">
 								Business
 								<div class="inner-action">
 									<span class="inner-count">4</span>
@@ -125,17 +237,8 @@
 									</span>
 								</div>
 							</span>
-							<span class="side-inner-name">
-								Credit Score
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name side-inner-name-active" onclick="openmoretab()">
-								Current
+							<span id="menu_subitem_2" class="tab-action-menu-item">
+								Art / License / Lorem
 								<div class="inner-action">
 									<span class="inner-count">1</span>
 									<span class="inner-arrow">
@@ -143,8 +246,8 @@
 									</span>
 								</div>
 							</span>
-							<span class="side-inner-name">
-								Drivers
+							<span id="menu_subitem_3" class="tab-action-menu-item">
+								Producsts B and C
 								<div class="inner-action">
 									<span class="inner-count">20</span>
 									<span class="inner-arrow">
@@ -152,8 +255,8 @@
 									</span>
 								</div>
 							</span>
-							<span class="side-inner-name">
-								Device Type
+							<span class="tab-action-menu-item">
+								Device Type Lorem Lorem
 								<div class="inner-action">
 									<span class="inner-count">0</span>
 									<span class="inner-arrow">
@@ -161,8 +264,8 @@
 									</span>
 								</div>
 							</span>
-							<span class="side-inner-name">
-								Accidents
+							<span class="tab-action-menu-item">
+								Accidents / Cars / Bikes
 								<div class="inner-action">
 									<span class="inner-count">0</span>
 									<span class="inner-arrow">
@@ -170,7 +273,7 @@
 									</span>
 								</div>
 							</span>
-							<span class="side-inner-name">
+							<span class="tab-action-menu-item">
 								Business
 								<div class="inner-action">
 									<span class="inner-count">7</span>
@@ -179,8 +282,8 @@
 									</span>
 								</div>
 							</span>
-							<span class="side-inner-name">
-								Credit Score
+							<span class="tab-action-menu-item">
+								Credit Score / Money
 								<div class="inner-action">
 									<span class="inner-count">3</span>
 									<span class="inner-arrow">
@@ -188,7 +291,7 @@
 									</span>
 								</div>
 							</span>
-							<span class="side-inner-name">
+							<span class="tab-action-menu-item">
 								Current
 								<div class="inner-action">
 									<span class="inner-count">2</span>
@@ -197,90 +300,9 @@
 									</span>
 								</div>
 							</span>
-							<span class="side-inner-name">
-								Drivers
-								<div class="inner-action">
-									<span class="inner-count">5</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name">
-								Device Type
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
 						</div>
-						<div id="tab_more" class="tab-result">
-							<span class="side-inner-name">
-								Arts / Design / Fashion
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name">
-								Business
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name">
-								Communication
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name">
-								Services
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name">
-								Education & Training
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name side-inner-name-active">
-								Code
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name">
-								More?
-								<div class="inner-action">
-									<span class="inner-count">0</span>
-									<span class="inner-arrow">
-										<ion-icon name="chevron-forward-outline"></ion-icon>
-									</span>
-								</div>
-							</span>
-							<span class="side-inner-name">
+						<div id="submenu_content_2" class="submenu-content">
+							<span class="tab-action-menu-item">
 								General Studies
 								<div class="inner-action">
 									<span class="inner-count">0</span>
@@ -289,8 +311,136 @@
 									</span>
 								</div>
 							</span>
-							<span class="side-inner-name">
+							<span class="tab-action-menu-item">
 								Health & Medical
+								<div class="inner-action">
+									<span class="inner-count">0</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Current
+								<div class="inner-action">
+									<span class="inner-count">1</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Drivers
+								<div class="inner-action">
+									<span class="inner-count">20</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Device Type
+								<div class="inner-action">
+									<span class="inner-count">0</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Accidents
+								<div class="inner-action">
+									<span class="inner-count">0</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Business
+								<div class="inner-action">
+									<span class="inner-count">7</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Credit Score
+								<div class="inner-action">
+									<span class="inner-count">3</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Current
+								<div class="inner-action">
+									<span class="inner-count">2</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+						</div>
+						<div id="submenu_content_3" class="submenu-content">
+							<span class="tab-action-menu-item">
+								Education & Training
+								<div class="inner-action">
+									<span class="inner-count">0</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Code
+								<div class="inner-action">
+									<span class="inner-count">0</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								More?
+								<div class="inner-action">
+									<span class="inner-count">0</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Current
+								<div class="inner-action">
+									<span class="inner-count">1</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Drivers
+								<div class="inner-action">
+									<span class="inner-count">20</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Device Type
+								<div class="inner-action">
+									<span class="inner-count">0</span>
+									<span class="inner-arrow">
+										<ion-icon name="chevron-forward-outline"></ion-icon>
+									</span>
+								</div>
+							</span>
+							<span class="tab-action-menu-item">
+								Accidents
 								<div class="inner-action">
 									<span class="inner-count">0</span>
 									<span class="inner-arrow">
@@ -300,12 +450,12 @@
 							</span>
 						</div>
 					</div>
-					<div id="tab_body" class="tab-body">
-						<div class="tab-body-inner">
+					<div class="tab-action-checkboxes">
+						<div id="tab_check_1" class="tab-body-inner">
 							<div class="inner-control">
 								<label class="checkbox-container checkbox-red">
-									Unselect All Current
-									<input type="checkbox" checked>
+									Unselect All Current (Container 1)
+									<input type="checkbox">
 									<span class="checkmark-inner"></span>
 								</label>
 							</div>
@@ -512,10 +662,392 @@
 								</label>
 							</div>
 						</div>
+						<div id="tab_check_2" class="tab-body-inner">
+							<div class="inner-control">
+								<label class="checkbox-container checkbox-red">
+									Unselect All Current (Container 2)
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+							</div>
+							<div class="inner-content">
+								<label class="checkbox-container">
+									State
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									New
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Fee
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Stat
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Fee
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									More
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Stat
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Car
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Count
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									State
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									New
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									New
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Fee
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Stat
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Fee
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									More
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Stat
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Car
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Count
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+							</div>
+						</div>
+						<div id="tab_check_3" class="tab-body-inner">
+							<div class="inner-control">
+								<label class="checkbox-container checkbox-red">
+									Unselect All Current (Container 3)
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+							</div>
+							<div class="inner-content">
+								<label class="checkbox-container">
+									State
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									New
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									New
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Fee
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Stat
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Fee
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									More
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Stat
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Car
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Count
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									State
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									New
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									New
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Fee
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Fee
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									More
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox">
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Stat
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Car
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Count
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+								<label class="checkbox-container">
+									Credit
+									<input type="checkbox" checked>
+									<span class="checkmark-inner"></span>
+								</label>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="tab-section tab-2">
+			<div class="tab-section">
 				<div class="tab-head">
 					<span class="tab-head-name">Campaing Controls</span>
 					<span class="tab-head-name">Campaing Ad Copy</span>
@@ -756,32 +1288,59 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <script type="text/javascript">
+	$( document ).ready(function() {
+		$('#menu_item_1').hover(
+			function(){
+				$(this).addClass('tab-action-menu-item-active'),
+				$('#tab_action').addClass('menu-content-1'),
+				$('#submenu_content_1').css('display','block')
+			}
+		)
 
-	$('#tab_side').hover(
-		function(){
-			$('#tab_side').addClass('open-side'),
-			$('#tab_more').addClass('open-more'),
-			$('#tab_body').addClass('open-body')
-		},
-		function(){
-			$('#tab_side').removeClass('open-side'),
-			$('#tab_more').removeClass('open-more'),
-			$('#tab_body').removeClass('open-body')
-		}
-	)
+		$('#menu_item_2').hover(
+			function(){
+				$(this).addClass('tab-action-menu-item-active'),
+				$('#tab_action').addClass('menu-content-2'),
+				$('#submenu_content_2').css('display','block')
+			}
+		)
 
-	function openmoretab() {
-	    var side = document.getElementById("tab_side");
+		$('#menu_item_3').hover(
+			function(){
+				$(this).addClass('tab-action-menu-item-active'),
+				$('#tab_action').addClass('menu-content-3'),
+				$('#submenu_content_3').css('display','block')
+			}
+		)
 
-	    var more = document.getElementById("tab_more");
+		$('#menu_subitem_1').hover(
+			function(){
+				$(this).addClass('tab-action-menu-item-active'),
+				$('#tab_check_1').css('display','block')
+			},
+			function(){
+				$(this).removeClass('tab-action-menu-item-active'),
+				$('#tab_check_1').css('display','none')
+			}
+		)
 
-	    var body = document.getElementById("tab_body");
+		$('#menu_subitem_2').hover(
+			function(){
+				$(this).addClass('tab-action-menu-item-active'),
+				$('#tab_check_2').css('display','block')
+			},
+			function(){
+				$(this).removeClass('tab-action-menu-item-active'),
+				$('#tab_check_2').css('display','none')
+			}
+		)
 
-	    side.classList.toggle("open-side");
-
-		more.classList.toggle("open-more");
-
-		body.classList.toggle("open-body");
-	}
+		$('#menu_subitem_3').hover(
+			function(){
+				$(this).addClass('tab-action-menu-item-active'),
+				$('#tab_check_3').css('display','block')
+			}
+		)
+	});
 </script>
 </html>

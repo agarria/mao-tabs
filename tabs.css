@@ -67,7 +67,7 @@
 	position: relative;
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: flex-start;
 	float: left;
 	width: 100%;
 	height: auto;
@@ -83,150 +83,32 @@
 	padding: 0;
 	margin: 0;
 	background: #fff;
-	border-right: 2px solid #01b88e;
 	transition: all .3s ease;
 }
 
-.open-side {
-	width: 500px;
-	border-right: 0;
-}
-
-.open-side .tab-fix {
-	border-right-color: #01b88e;
-	border-bottom-color: #01b88e;
-}
-
-.tab-fix {
-	position: relative;
-	display: block;
-	float: left;
-	width: 200px;
-	height: auto;
-	padding: 0;
-	margin: 0;
-	border-right-style: solid;
-	border-right-width: 2px;
-	border-right-color: transparent;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	border-bottom-color: transparent;
-	transition: all .3s ease;
-}
-
-.side-inner-name {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	float: left;
-	width: 100%;
-	height: 40px;
-	padding: 0 0 0 10px;
-	margin: 0;
-	font-size: 12px;
-	font-weight: 500;
-	cursor: pointer;
-	transition: all .3s ease;
-}
-
-.side-inner-name:hover,
-.side-inner-name:focus,
-.side-inner-name:active {
-	color: #fff;
-	background: #01b88e;
-}
-
-.side-inner-name:hover .inner-count {
-	color: #01b88e;
-	background: #fff;
-}
-
-.side-inner-name-active {
-	color: #fff;
-	background: #01b88e;
-}
-
-.side-inner-name-active .inner-count {
-	color: #01b88e;
-	background: #fff;
-}
-
-.inner-action {
+.tab-content {
 	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	top: 0;
-	right: 10px;
-	width: auto;
-	height: 100%;
-}
-
-.inner-count {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	float: left;
-	width: auto;
-	height: auto;
-	padding: 4px;
-	margin: 0;
-	border-radius: 5px;
-	color: #fff;
-	font-size: 12px;
-	font-weight: 500;
-	background: #01b88e;
-}
-
-.inner-arrow {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: auto;
-	height: 100%;
-	padding: 0;
-	margin: 0 0 0 5px;
-	font-size: 16px;
-}
-
-.tab-result {
-    position: relative;
-    display: block;
-    float: left;
-    width: 0px;
-    height: 0px;
+    display: none;
+    top: 0;
+    right: -2px;
+    width: 0;
+    height: auto;
     padding: 0;
     margin: 0;
-    opacity: 0;
-    color: #fff;
-    overflow: hidden;
-    transition: all .3s ease;
-}
-
-.open-more {
+    z-index: 666;
 	color: #000;
-	opacity: 1;
-	width: 300px;
-	height: auto;
-    border-right: 2px solid #01b88e;
+	transform: translate(100%,0);
+    transition: all .3s ease;
+    border-top: 2px solid #01b88e;
+    border-bottom: 2px solid #01b88e;
 }
 
-.tab-result .side-inner-name:last-child {
-	border-bottom: 2px solid #01b88e;
-}
-
-.tab-body {
+.tab-body-inner {
 	position: relative;
-	display: block;
+	display: none;
 	float: left;
-	width: calc(100% - 200px);
+	width: 100%;
 	height: auto;
-	padding: 0;
-	margin: 0;
-	transition: all .3s ease;
 }
 
 .open-body {
@@ -308,7 +190,7 @@
     align-items: center;
     justify-content: flex-start;
     float: left;
-    width: calc(100% / 5);
+	width: calc(100% / 3);
     height: 40px;
     padding: 0 0 0 25px;
     margin: 0;
@@ -463,4 +345,115 @@
 .button-zip-code ion-icon {
 	font-size: 20px;
 	margin: 0 5px 0 0;
+}
+
+.tab-action-menu,
+.tab-action-submenu,
+.tab-action-checkboxes {
+	position: relative;
+	display: block;
+	float: left;
+	width: 200px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	transition: all .3s ease;
+}
+
+.tab-action-menu {
+	width: 200px;
+}
+
+.tab-action-submenu {
+	width: 300px;
+}
+
+.tab-action-checkboxes {
+	width: calc(100% - 500px);
+}
+
+.tab-action-menu-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	float: left;
+	width: 100%;
+	height: 40px;
+	padding: 0 0 0 10px;
+	margin: 0;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+	border-right: 2px solid #01b88e;
+	transition: all .3s ease;
+	background: #fff;
+}
+
+.tab-action-menu-item:hover,
+.tab-action-menu-item:focus,
+.tab-action-menu-item:active {
+	color: #fff;
+	background: #01b88e;
+}
+
+.tab-action-menu-item:hover .inner-count {
+	color: #01b88e;
+	background: #fff;
+}
+
+.tab-action-menu-item-active {
+	color: #fff;
+	background: #01b88e;
+}
+
+.tab-action-menu-item-active .inner-count {
+	color: #01b88e;
+	background: #fff;
+}
+
+.inner-action {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	right: 10px;
+	width: auto;
+	height: 100%;
+}
+
+.inner-count {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	width: auto;
+	height: auto;
+	padding: 4px;
+	margin: 0;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	background: #01b88e;
+}
+
+.inner-arrow {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: 100%;
+	padding: 0;
+	margin: 0 0 0 5px;
+	font-size: 16px;
+}
+
+.submenu-content {
+	position: relative;
+	display: none;
+	float: left;
 }
