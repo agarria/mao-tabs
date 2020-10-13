@@ -372,6 +372,14 @@
 	width: calc(100% - 500px);
 }
 
+.open-tab-action-checkboxes {
+	width: calc(100% - 200px);
+}
+
+.open-tab-action-checkboxes .tab-body-inner .inner-content .checkbox-container {
+	width: calc(100% / 5);
+}
+
 .tab-action-menu-item {
 	position: relative;
 	display: flex;
