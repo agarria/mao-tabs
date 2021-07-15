@@ -1,0 +1,166 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #eee;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.drop-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 15px 0 0;
+  border-radius: 0.2rem;
+}
+
+.drop-button:hover .drop-title {
+	opacity: 1;
+}
+
+.drop-title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -30px;
+    left: 50%;
+    width: 140px;
+    height: 25px;
+    margin-left: -70px;
+    background: #000;
+    padding: 0;
+	opacity: 0;
+    font-size: 12px;
+    font-weight: 400;
+	border-radius: 0.2rem;
+	transition: all .3s ease;
+}
+
+.drop-1 {
+  background: #00bcd4;
+}
+
+.drop-2 {
+  background: #000;
+}
+
+.drop-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: auto;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: visible;
+  background: #01b88e;
+  border-radius: 0.2rem;
+}
+
+.drop-name {
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+
+.drop-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+  border-left: 1px solid #fff;
+}
+
+.drop-icon:hover .drop-hide {
+  display: block;
+}
+
+.drop-hide {
+  position: absolute;
+  display: none;
+  bottom: -100%;
+  right: -240px;
+  width: 240px;
+  height: 200px;
+  overflow: hiden;
+  transform: translate(-50px, 150px);
+  background: #fff;
+}
+
+.drop-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  margin: 0;
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #999;
+  transition: all .3s ease;
+}
+
+.drop-link:hover {
+  color: #fff;
+  background: #01b88e;
+}
+
+.drop-link:last-child {
+  border: 0;
+}
+
+.drop-link i {
+  margin: 0 10px 0 0;
+}
+
+
+.button-container {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+}
