@@ -78,17 +78,16 @@
     .dayparts tbody tr:nth-child(5) td:first-child,
     .dayparts tbody tr:nth-child(6) td:first-child,
     .dayparts tbody tr:nth-child(7) td:first-child {
-        overflow: hidden;
-        color: transparent !important;
+        display: none;
     }
 
-    .dayparts tbody tr:nth-child(1) td:first-child:before,
-    .dayparts tbody tr:nth-child(2) td:first-child:before,
-    .dayparts tbody tr:nth-child(3) td:first-child:before,
-    .dayparts tbody tr:nth-child(4) td:first-child:before,
-    .dayparts tbody tr:nth-child(5) td:first-child:before,
-    .dayparts tbody tr:nth-child(6) td:first-child:before,
-    .dayparts tbody tr:nth-child(7) td:first-child:before {
+    .dayparts tbody tr:nth-child(1):before,
+    .dayparts tbody tr:nth-child(2):before,
+    .dayparts tbody tr:nth-child(3):before,
+    .dayparts tbody tr:nth-child(4):before,
+    .dayparts tbody tr:nth-child(5):before,
+    .dayparts tbody tr:nth-child(6):before,
+    .dayparts tbody tr:nth-child(7):before {
         position: absolute;
         display: block;
         top: 0;
@@ -101,31 +100,31 @@
         text-transform: uppercase;
     }
 
-    .dayparts tbody tr:nth-child(1) td:first-child:before {
+    .dayparts tbody tr:nth-child(1):before {
         content: "s";
     }
 
-    .dayparts tbody tr:nth-child(2) td:first-child:before {
+    .dayparts tbody tr:nth-child(2):before {
         content: "m";
     }
 
-    .dayparts tbody tr:nth-child(3) td:first-child:before {
+    .dayparts tbody tr:nth-child(3):before {
         content: "t";
     }
 
-    .dayparts tbody tr:nth-child(4) td:first-child:before {
+    .dayparts tbody tr:nth-child(4):before {
         content: "w";
     }
 
-    .dayparts tbody tr:nth-child(5) td:first-child:before {
+    .dayparts tbody tr:nth-child(5):before {
         content: "t";
     }
 
-    .dayparts tbody tr:nth-child(6) td:first-child:before {
+    .dayparts tbody tr:nth-child(6):before {
         content: "f";
     }
 
-    .dayparts tbody tr:nth-child(7) td:first-child:before {
+    .dayparts tbody tr:nth-child(7):before {
         content: "s";
     }
 
