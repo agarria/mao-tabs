@@ -145,7 +145,7 @@
         display: none;
     }
 
-    .hour-row .houer {
+    .hour-row .hour {
         transition: .3s;
         width: 30px;
         height: 30px;
