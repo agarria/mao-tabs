@@ -162,4 +162,35 @@
         padding: 0px !important;
     }
 
+    #tbl_campaign_maintenance td,
+    #tbl_publisher_report td,
+    #tbl_publisher_user td,
+    #tbl_advertiser_user td,
+    #tbl_advertiser_report td,
+    #tbl_consumer_report td,
+    #tbl_lt_report td,
+    #tbl_admin_report td,
+    #tbl_advertiser_maintenance td {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+    }
+
+    #tbl_campaign_maintenance td:before,
+    #tbl_publisher_report td:before,
+    #tbl_publisher_user td:before,
+    #tbl_advertiser_user td:before,
+    #tbl_advertiser_report td:before,
+    #tbl_consumer_report td:before,
+    #tbl_lt_report td:before,
+    #tbl_admin_report td:before,
+    #tbl_advertiser_maintenance td:before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0 !important;
+    }
+
 }
